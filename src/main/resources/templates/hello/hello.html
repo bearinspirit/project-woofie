@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmls:th="http://www.thymeleaf.org">
+	<head th:replace="template :: head">
+		<title>Hello,Spring</title>
+	</head>
+	
+	<body>
+		<nav th:replace="template :: nav"></nav>
+		<h1 th:text=" 'Hello, ' + ${name} + '!'">Hello</h1>
+	</body>
+	
+		<div th:replace="template :: footer"></div>
+</html>
