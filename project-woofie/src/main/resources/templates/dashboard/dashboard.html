@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html xmls:th="http://www.thymeleaf.org">
+	
+  <head>
+  	<div th:replace="template :: head"></div>
+	<title>Dashboard</title>
+	<link rel="stylesheet" href="../../css/dashboard.css" />
+	<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet" />
+	
+  	<script rel="text/javascript" src="../../script/dashboard.js"></script>
+  </head>
+
+  <body>
+   	<!--Default navbar-->
+    <nav th:replace="template :: nav"></nav>
+
+  	<!--Body content-->
+    <div class="container body-content">
+      <div class="container" id="bodyCon">
+      
+		    <div class="row">
+		        <div class="col-xs-3">
+		            <div class="list-group navlist">
+		              <a href="dashboard" class="list-group-item nav" id="dashboardTab">
+		                <p><span style="font-size: 1em; font-family: 'Arimo', sans-serif;">My Dashboard</span></p>
+		              </a>
+		
+		              <a href="#" class="list-group-item nav" id="intTutTab">
+		                <p><span style="font-size: 1em; font-family: 'Arimo', sans-serif;">Interactive Tutorials</span></p>
+		              </a>
+		            </div>
+		       	</div>
+		       	
+		       	<div class="col-xs-9">
+		       		<div class="container" id="dashboardHeaderCon">
+		       			<h3 id="dashboardHeader">My Dashboard</h3>
+		       		</div>
+		       	</div>
+		     </div>
+		     
+		     <div class="row">
+		     	<div class="col-xs-3"></div>
+		     	
+			    <!-- Dashboard contents -->
+				<div class="col-xs-9">
+					<!-- Overall Prog Bar Con -->
+					   <div class="container">
+						  <div class="row">
+							<div class="col-xs-6">
+							    <div class="container" id="overallProgBarCon">
+							     	<h4>My Overall Progress</h4>
+						            <div class="progress" id="overallProgBar">
+						                <div class="progress-bar" style="width:2%;"></div>
+						         	</div>
+							     </div>
+							 </div>
+							     	
+							 <div class="col-xs-3">
+							     <div class="container" id="overallScoreCon">
+							     	<h4>Overall Score
+							     		<span class="glyphicon glyphicon-triangle-top" id="triangleTopIcon" aria-hidden="true"></span>
+							     	</h4>
+							     			
+							     	<div id="overallScoreHeader">
+							            <p id="overallScore">- / 100</p>
+							        </div>
+							     </div>
+							  </div>
+							  	
+							</div>
+						</div> <!-- end of overallProgCon -->
+						
+						<div class="container" id="tutProgCon">
+							<div class="row">
+								<div class="col-xs-6">
+							    	<div class="container" id="tutProgBarCon">
+							     		<h5>Tutorial 1.1</h5>
+						            	<div class="progress" id="tutProgBar">
+						                	<div class="progress-bar" style="width:2%;"></div>
+						         		</div>
+							     	</div>
+							     </div>
+							     	
+							     <div class="col-xs-3">
+							     	<div class="container" id="tutScoreCon">
+							     		<h5>Score</h5>
+							     			
+							     		<div id="tutScoreHeader">
+							            	<p id="tutScore">- / 10</p>
+							            </div>
+							     	</div>
+							  	</div>
+							</div>
+						</div> <!-- end of tutProgCon -->
+	     
+			     	</div>
+		     
+      			</div> <!-- end of progRow -->
+      			
+      			<div class="container" id="tutCon">
+      				<div class="col-xs-3"></div>
+      			
+      				<div class="col-xs-9" id="tutCol">
+      					<div class="container">
+      						<div class="row">
+	      						<div class="col-xs-4">
+	      							<h4>Recently Viewed Tutorial</h4>
+	      					
+		      						<div class="container" id="currentTutCon">
+		      							<p id="currentTut"><a href="#">Tutorial 1.1</a></p>
+		      						</div>
+	      						</div>
+	      						
+	      						<div class="col-xs-6">
+	      							<h4>Most Viewed Tutorial</h4>
+	      							
+	      							<div class="container" id="graphCon">
+	      								<p>graph here</p>
+	      							</div>
+	      						</div>
+	      					</div>
+	      				</div>
+      				</div> <!-- end of tutCol -->
+      			</div> <!-- end of container -->
+      			
+      			<div class="container" id="availTutCon">
+      				<div class="col-xs-3"></div>
+      				
+      				<div class="col-xs-9">
+      					<div class="container">
+      						<div class="row" >
+	      						<div class="col-xs-9">
+	      							<h4>Available Tutorials</h4>
+	      							
+	      							<div class="container" id="availTutCon">
+	      								<p id="availTut"><a href="#">Tutorial 1.1</a></p>
+	      							</div>
+	      						</div>
+      						</div>
+      					</div>
+      				</div>
+      			</div> <!-- end of availTutCon-->
+   		 </div>
+   	</div>
+
+	<!-- footer -->
+    <div th:replace="template :: footer"></div>
+
+  </body>
+
+</html>

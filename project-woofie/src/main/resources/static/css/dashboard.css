@@ -1,0 +1,35 @@
+#dashboardTab {
+  padding: 8px 0 0 0;
+  text-align: center;
+}
+
+#intTutTab {
+  padding: 8px 0 0 0;
+  text-align: center;
+}
+
+#dashboardHeader {
+  padding-bottom: 5%;
+}
+
+#dashboardHeaderCon {
+  width: 100%;
+}
+
+#overallProgBar, #tutProgBar{
+	width: 45%;
+}
+
+#statsCon {
+  margin-bottom: 10%:
+}
+
+.footerCon {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+body{
+	overflow-x: hidden;
+}
